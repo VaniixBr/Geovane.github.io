@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configura para ser exibido em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Meu Site</title>
+    <!-- Estilo CSS  -->
+    <style>
+        /* Estilo global para o documento */
+        body {
+            font-family: Arial, sans-serif; /* fonte */
+            margin: 0; /* Remove margens */
+            padding: 0; /* Remove preenchimento  */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+        }
+
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #333; /* Cor de fundo do cabeçalho */
+            color: white; /* Cor do texto no cabeçalho */
+            padding: 10px 0; /* Espaçamento interno no topo e na base do cabeçalho */
+            text-align: center; /* Centraliza o texto no cabeçalho */
+        }
+
+        /* Estilo para a barra de navegação */
+        nav {
+            margin: 10px 0; /* Espaçamento externo na barra de navegação */
+            text-align: center; /* Centraliza os links da navegação */
+        }
+
+        /* Estilo para os links na barra de navegação */
+        nav a {
+            margin: 0 15px; /* Espaçamento entre os links */
+            text-decoration: none; /* Remove a sublinha dos links */
+            color: #333; /* Cor do texto dos links */
+            font-size: 18px; /* Tamanho da fonte dos links */
+        }
+
+        /* Estilo para cada link do site */
+        section {
+            margin: 20px; /* Espaçamento externo dos links */
+            padding: 20px; /* Espaçamento interno dos links */
+            background-color: white; /* Cor de fundo dos links */
+            border-radius: 8px; /* Arredonda as bordas dos links */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao redor dos links */
+        }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex; /* flexbox para alinhar os elementos */
+            flex-direction: column; /* Alinha os elementos em uma coluna */
+        }
+
+        /* Estilo para os rótulos (labels) no formulário */
+        label {
+            margin-bottom: 5px; /* Espaçamento abaixo de cada rótulo */
+            font-weight: bold; /* Deixa o texto dos rótulos em negrito */
+        }
+
+        /* Estilo para os campos de entrada (inputs e textarea) no formulário */
+        input, textarea {
+            margin-bottom: 15px; /* Espaçamento abaixo de cada campo */
+            padding: 10px; /* Espaçamento interno dos campos */
+            border: 1px solid #ccc; /* Borda dos campos */
+            border-radius: 5px; /* Arredonda as bordas dos campos */
+            font-size: 16px; /* Tamanho da fonte nos campos */
+        }
+
+        /* Estilo específico para o botão de envio do formulário */
+        input[type="submit"] {
+            background-color: #333; /* Cor de fundo do botão */
+            color: white; /* Cor do texto no botão */
+            border: none; /* Remove a borda padrão do botão */
+            cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+        }
+
+        /* Estilo para o botão de envio quando o mouse está sobre ele */
+        input[type="submit"]:hover {
+            background-color: #555; /* Muda a cor de fundo quando o botão é sobreposto */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1> 
+    </header>
+    
+    <!-- links  -->
+    <nav>
+        <a href="#sobre-min">Sobre Mim</a> <!-- Link "Sobre Mim" -->
+        <a href="#formacao">Formação</a> <!-- Link  "Formação" -->
+        <a href="#portifolio">Portfólio</a> <!-- Link  "Portfólio" -->
+        <a href="#contato">Contato</a> <!-- Link  "Contato" -->
+    </nav>
+    
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre-min">
+        <h2>Sobre Mim</h2> <!-- Título da seção -->
+        <p>Ola me chamo Geovane tenho 19 anos ainda nao fiz muita coisa na vida para falar bastante mas gosto de jogar video games meu favorito é God Of War, vejo tambem muitas serie e filmes, gosto muito de animais tenho 3 gatos e 1 cachorro, no momento estou juntando dinheiro para ir morar sozinho.</p> 
+    </section>
+    
+    <!-- Seção "Formação" -->
+    <section id="formacao">
+        <h2>Formação</h2> <!-- Título da seção -->
+        <p>Ensino Medio: Escola de Educação basica Teresa Ramos. <br>Curso Profissionalizante:Avanza Duração de 1 ano carga horaria 3 horas semanais.</p> 
+    </section>
+    
+    <!-- Seção "Portfólio" -->
+    <section id="portifolio">
+        <h2>Portfólio</h2> <!-- Título da seção -->
+        <p>Alguns trabalahos que eu fiz na Uninter.</p> <!-- Texto descritivo da seção -->
+        <ul>
+            <li><a href="/mnt/data/MODULO A de 2024 - Logica de Programacao e Algoritmos 3- Geovane Balasanelli.docx">MODULO A de 2024 - Lógica de Programação e Algoritmos</a></li>
+            <li><a href="/mnt/data/Atividades Extensionistas - Modelo de Proposta de Tema e Trabalho Final. (1).docx">Atividades Extensionistas - Proposta de Tema e Trabalho Final</a></li>
+            <li><a href="Trabalho - Relatorio 3 (1).pdf" target="_blank">Trabalho - Relatório 3 (PDF)</a></li>
+        </ul
+    </section>
+    
+    <!-- Seção "Contato" com formulário -->
+    <section id="contato">
+        <h2>Contato</h2> <!-- Título da seção -->
+        <!-- Formulário de contato -->
+        <form action="#" method="post">
+            <!-- Campo para o nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required> <!-- Input para o nome -->
+
+            <!-- Campo para o email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- Input para o email -->
+            
+            <!-- Campo para a mensagem -->
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea> <!-- Textarea para a mensagem  -->
+            
+            <!-- Botão de envio do formulário -->
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>
